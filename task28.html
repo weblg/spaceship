@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>task28-行星和飞船2</title>
+    <link rel="stylesheet" href="task28.css">
+  </head>
+  <body>
+    <!--地球和轨道-->
+    <div class="contain">
+      <!--地球-->
+      <img src="images/earth.png" alt="earth.png"/>
+      <!--四个轨道-->
+      <div class="orbit-0" id="orbit"></div>
+      <div class="orbit-1" id="orbit"></div>
+      <div class="orbit-2" id="orbit"></div>
+      <div class="orbit-3" id="orbit"></div>
+    </div>
+    <!--console消息窗体-->
+    <div class="console">
+      <div class="console-title">console消息窗体</div>
+      <div class="console-text"></div>
+    </div>
+    <!--control操作面板-->
+    <!--<select title="动力系统" data-type="powerSystem"> </select>-->
+    <div class="control">
+
+      <div class="control-title">control操作面板</div>
+      <div class="control-main">
+        <div data-id="0">
+          <p>第一轨道</p>
+          <select title="动力系统" data-type="powerSystem"> </select>
+          <select data-type="energySystem"> </select>
+          <button type="button" data-type="create" data-status="create">创建飞船</button>
+          <button type="button" data-type="drive" disabled="disabled" data-status="start">飞行</button>
+        </div>
+        <div data-id="1">
+          <p>第二轨道</p>
+         <select title="动力系统" data-type="powerSystem"> </select>
+          <select data-type="energySystem"> </select>
+          <button type="button" data-type="create" data-status="create">创建飞船</button>
+          <button type="button" data-type="drive" disabled="disabled" data-status="start">飞行</button>
+        </div>
+        <div data-id="2">
+          <p>第三轨道</p>
+           <select data-type="powerSystem"> </select>
+          <select data-type="energySystem"> </select>
+          <button type="button" data-type="create" data-status="create">创建飞船</button>
+          <button type="button" data-type="drive" disabled="disabled"  data-status="start">飞行</button>
+        </div>
+        <div data-id="3">
+          <p>第四轨道</p>
+          <select data-type="powerSystem"> </select>
+          <select data-type="energySystem"> </select>
+          <button type="button" data-type="create" data-status="create">创建飞船</button>
+          <button type="button" data-type="drive" disabled="disabled" data-status="start">飞行</button>
+        </div>
+      </div>
+    </div>
+    <!--查看飞船的位置和状态-->
+      <!--<div class="orbit-ship3 space-ship">
+      <div></div>
+      <p>5%</p>
+    </div>
+    <div class="orbit-ship1 space-ship">
+      <div></div>
+      <p>5%</p>
+    </div>-->
+    <!--飞船监控系统-->
+    <div id="supervise">
+      <p>飞船实时状态监控系统<p/>
+      <table id="superviseList">
+        <tr>
+          <th>飞船所在轨道号</th>
+          <th>动力系统</th>
+          <th>能源系统</th>
+          <th>当前飞行状态</th>
+          <th>剩余能量</th>
+        </tr>
+      </table>
+    </div>
+  <script src="task28-main.js"></script>
+  <script src="task28-commander.js"></script>
+  <script src="task28-god.js"></script>
+  <script src="task28-spaceship.js"></script>
+
+  </body>
+</html>
